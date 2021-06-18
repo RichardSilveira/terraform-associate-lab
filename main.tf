@@ -17,4 +17,7 @@ provider "aws" {
 
 resource "aws_s3_bucket" "test" {
   bucket_prefix = "test-"
+  tags = {
+    "Name" = "test"
+  }
 }
